@@ -1,0 +1,6 @@
+<h2>People</h2>
+<ul>
+    <li *ngFor="let p of people, index as i">
+        <a [routerLink]="['/people', i]">{{p.name}}</a>
+    </li>
+</ul>
